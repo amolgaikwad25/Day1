@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hello World Circular Animation</title>
+
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #111;
+    overflow: hidden;
+  }
+
+  .circle {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    animation: rotate 4s linear infinite;
+  }
+
+  .text {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #00ffcc;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+</style>
+</head>
+
+<body>
+
+  <div class="circle">
+    <div class="text">Hello World</div>
+  </div>
+
+</body>
+</html>
